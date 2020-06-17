@@ -5,11 +5,15 @@ int main(){
 	float r;
 	printf("nhap vao hai so nguyen : ");
 	scanf("%d %d", &a, &b); 
-	
-	int d = a/b;
+	float d = a/b;
 	int s = a*b;
-	if( a>=b){
-		printf("hieu cua a va b la %f ",d);
+	if( a>b){
+		if(b==0){
+			printf("error");
+		}else{
+			printf("hieu cua a va b la %f ",d);
+		}
+		
 	}else{
 	    printf("tich cua a va b la %d ",s);
 	}
