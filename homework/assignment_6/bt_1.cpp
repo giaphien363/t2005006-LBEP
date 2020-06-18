@@ -6,18 +6,21 @@ int main(){
 	scanf("%d",&n);
 	int a[n];
 	int sole=0;
+	//nhap
 	for(int i=0;i<n;i++){
 		printf("\nnhap phan tu a[%d] =",i);
 		scanf("%d",&a[i]);
 	}
-	for(int i = 0 ;i<n;i++){
+	// processing...
+	for(int i = n-1 ;i>=0;i--){
 		if(a[i]%2 != 0){
-			sole=a[i];
+			x=a[i];
+			break;
 		}
+    }
+    if(x%2==0){
+    	printf
 	}
-	if(sole%2 != 0 ){
-		printf("\nso le cuoi cung la: %d",sole);
-	}else{
-		printf("\nkhong co so le");
-	}
+    
+	
 }
