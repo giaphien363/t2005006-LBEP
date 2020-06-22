@@ -12,23 +12,26 @@ int main(){
 		printf("\nnhap phan tu a[%d]= ",i);
 		scanf("%d",&a[i]);
 	}
-	
 //processing..
-
-    int count,i;
+    int count;
     printf("\ncac so nguyen to la: ");
-    for(i=0;i<n;i++){
-    	if(a[i]>2){
-    		for(int j=2;j <= (a[i]/2); j++){
-    			if(a[i]%j == 0){
-    				count++;
-				}
+    for(int i=0;i<n;i++){
+    	if(a[i] < 2){
+    		continue;
+		}
+		if(a[i] <= 3){
+			printf("%d\t",a[i]);
+			continue;
+		}
+		int count =0 ;
+		for(int j=2;j <= a[i]/2; j++){
+			if(a[i]%j == 0){
+				count++;
+				break;
 			}
-			if(count = 0){
-		        printf("%d\t",a[i]);
-	        }
-		}else if(a[i]=0){
+		}
+		if(count == 0){
 			printf("%d\t",a[i]);
 		}
-    }
+	}   
 }

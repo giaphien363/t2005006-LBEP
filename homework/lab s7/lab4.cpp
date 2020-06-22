@@ -19,5 +19,9 @@ int main(){
 			sotiemcan=a[i];
 		}
     }
+    if(sotiemcan == 0){
+    	printf("\nkhong co gia tri nao nho hon x");
+	}else{
     printf("\nso tiem can voi x la : %d",sotiemcan);
+    }
 }

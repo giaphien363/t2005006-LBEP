@@ -6,11 +6,11 @@ int main(){
 	scanf("%d",&m);
 	printf("nhap so nam muon gui:\n");
 	scanf("%d",&y);
-	float s=m;
+	float tiennhan=m;
 	for(int i=1;i<=y;i++){
-		float t;
-		t=s*8/100;
-		s+=t;
+		float lai;
+		lai=tiennhan*8/100;
+		tiennhan+=lai;
 	}
-	printf("tong so tien nhan duoc la %f",s);
+	printf("tong so tien nhan duoc la %f",tiennhan);
 }

@@ -18,9 +18,10 @@ int main(){
 		if(i%2==0 && i!=0 ){
 			if(a[i] %2 != 0){
 				sum+=a[i];
+				x++;
 			}
 		}
 	} 
-	printf("\ntong so le = %d",sum);
+	printf("\ntrung binh cong so le = %d",sum/x);
 	
 }

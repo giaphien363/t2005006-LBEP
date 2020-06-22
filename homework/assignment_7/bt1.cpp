@@ -1,4 +1,4 @@
-	#include <stdio.h>
+#include <stdio.h>
 
 int main(){
 	int n;
@@ -7,21 +7,23 @@ int main(){
 	int a[n];
 	printf("\na[0]=");
 	scanf("%d",&a[0]);
-	int i,j,temp;
+	
+	int i;
 	
 	for(i=1;i<n;i++){
 		printf("a[%d]=",i);
 		scanf("%d",&a[i]);
-		j=i-1;
-		temp=a[i];
+		int j=i-1;
+		int temp=a[i];
 		while(j>=0 && temp<a[j]){
 			a[j+1] = a[j];
 			j--;
 		}
 		a[j+1] = temp;
 	}
+	printf("\ncac gia tri mang a");
 	for(i=0;i<n;i++){
-	printf("\nxuat mang :a[%d]= %d",i,a[i]);
+	printf("\na[%d]= %d",i,a[i]);
 	
     }
 
